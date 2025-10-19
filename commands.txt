@@ -4,3 +4,4 @@ add : git add . (. Specifies add all files inisde the cuurent folder or sub fold
 commit : git commit -m "commit message example : home page completed"
 to chekc current branch : git branch (main or master )/: ours branch is main
 mkdir : to make folder using terminal
+line:7 Goverdhan
