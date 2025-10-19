@@ -107,6 +107,119 @@
                 translate: auto;
                 rotate: calc(12deg);
             }
+            .Div-S2{
+            
+            }
+            .S2-H1{
+                font-family: 'Playfair Display', Georgia, 'Times New Roman', serif;
+                /* Responsive font size: grows with viewport but stays within sensible limits */
+                font-size: 70px;
+                color:#1D5428;
+                text-align: center;
+                margin: 0 0 20px;
+                padding-top:90px;
+            }
+            .S2-P2{
+                font-family: 'Montserrat', 'Futura', 'Arial', sans-serif;
+                /* Responsive font size: grows with viewport but stays within sensible limits */
+                font-size: clamp(1rem, 1vw, 1rem);
+                color:#8b8472;
+                text-align: center;
+                padding-top:0px;
+                padding-bottom: 30px;
+            }
+            .Img1-In-S2{
+                height: 50px;
+                width: 70px;
+            }
+            .Div2-In-S2 {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 50px;
+            margin-top: 40px;
+        }
+        .Div-For-Flex {
+            background: #fff;
+            border: 1px solid #dbe5db;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+            width: 370px;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+            overflow: hidden;
+            padding-bottom: 24px;
+            transition: box-shadow 0.3s, transform 0.3s;
+        }
+        .Div-For-Flex:hover {
+            box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+            transform: translateY(-10px) scale(1.03);
+            z-index: 2;
+        }
+        .Div-For-Flex img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            border-bottom: 1px solid #eaeaea;
+        }
+        .Div-For-Detaills {
+            padding: 24px 24px 0 24px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+        }
+        .H1-In-S2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2rem;
+            color: #1D5428;
+            margin-bottom: 12px;
+        }
+        .P-In-S2 {
+            font-family: 'Montserrat', 'Futura', 'Arial', sans-serif;
+            font-size: 1rem;
+            color: #7a7a7a;
+            margin-bottom: 24px;
+        }
+        .card-buttons {
+            display: flex;
+            gap: 30px;
+            margin-top: auto;
+            padding: 0 24px;
+            padding-top: 10px;
+        }
+        .btn-outline {
+            padding: 8px 20px;
+            border: 2px solid #1D5428;
+            background: transparent;
+            color: #1D5428;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .btn-outline:hover {
+            background: #1D5428;
+            color: white;
+        }
+        .btn-filled {
+            padding: 8px 20px;
+            border: none;
+            background: #FADE4D;
+            color: #1D5428;
+            border-radius: 4px;
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+        .btn-filled:hover {
+            background: #F7D420;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .Div-For-Pding{
+            padding-bottom: 6px;
+        }
     </style>
 </head>
 <body>
@@ -120,12 +233,69 @@
             </ul>
         </nav>
     </header>
-    <div class="Div-Main">
-        <h1 class="H1">
-            Discover the Joy of <br> sutainable 
-        </h1>
-        <p class="p1">Embrace the Farm-to-Table Lifestyle: Explore Our Locally Sourced,<br> Organic Produce and Discover the Genuine Flavors of Nature</p>
-        <button class="b1 btn btn-warning">Shop Now</button>
+    <div class="Div1">
+        <div class="Div-Main">
+             <h1 class="H1">
+                 Discover the Joy of <br> sutainable 
+             </h1>
+             <p class="p1">Embrace the Farm-to-Table Lifestyle: Explore Our Locally Sourced,<br> Organic Produce and Discover the Genuine Flavors of Nature</p>
+             <button class="b1 btn btn-warning">Shop Now</button>
+         </div>
+            <div class="Div-S2">
+                <div class="Div1-IN-S2">
+                     <h1 class="S2-H1">
+                         About Our Farm
+                    </h1>
+                    <p class="S2-P2">Discover the Passion and Dedication Behind Our Sustainable Agricultural Practices</p>
+                </div>
+                <div class="Div2-In-S2 d-flex flex-column justify-content-center">
+                    <div class="Div-For-Flex">
+                        <img src="./DxUNzH9YTKAK19cWWP1SIM-4096x4096.webp" class="Img1-In-S2">
+                        <div class="Div-For-Detaills">
+                            <h1 class="H1-In-S2">
+                                Uncover the Rich History and Traditions of Small-
+                            </h1>
+                            <p class="P-In-S2">
+                                Explore the Vibrant Ecosystem of Our Organic Farm and Learn How We Cultivate the Finest Fruits and 
+                            </p>
+                            <div class="card-buttons">
+                                     <button class="btn-outline">Learn More</button>
+                                        <button class="btn-filled">Shop Produce</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Div-For-Flex">
+                        <img src="./JkLYa7S4kWOKB1GsOonxyi-4096x4096.webp" class="Img1-In-S2">
+                        <div class="Div-For-Detaills Div-For-Pding">
+                            <h1 class="H1-In-S2">
+                                Witness the Beauty of Our Bountiful 
+                            </h1>
+                            <p class="P-In-S2">
+                                Immerse Yourself in the Rhythm of the Seasons and Witness the Transformation of Our Farmland
+                            </p>
+                            <div class="card-buttons">
+                                <button class="btn-outline">Discover More</button>
+                                <button class="btn-filled">Explore Our Orchard</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="Div-For-Flex">
+                        <img src="./DperQtX48JvJVMCVQCYPgO-4096x4096.webp" class="Img1-In-S2">
+                        <div class="Div-For-Detaills">
+                            <h1 class="H1-In-S2">
+                                Uncover the Secrets of Our Sustainable Cultivation
+                            </h1>
+                            <p class="P-In-S2">
+                                Dive into the Vibrant Tapestry of Our Farm, Where Tradition Meets Innovation
+                            </p>
+                            <div class="card-buttons">
+                                    <button class="btn-outline">Learn About Our Methods</button>
+                                    <button class="btn-filled">Browse Our Selection</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
     </div>
 </body>
 </html>
